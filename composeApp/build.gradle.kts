@@ -12,7 +12,7 @@ kotlin {
     androidTarget {
         compilations.all {
             kotlinOptions {
-                jvmTarget = "1.8"
+                jvmTarget = "17"
             }
         }
     }
@@ -37,7 +37,8 @@ kotlin {
                 implementation(libs.voyager.navigator)
                 implementation(libs.composeImageLoader)
                 implementation(libs.kotlinx.coroutines.core)
-                implementation(libs.moko.mvvm)
+                api(libs.moko.mvvm.core)
+                api(libs.moko.mvvm.compose)
                 implementation(libs.koin.core)
             }
         }
@@ -82,11 +83,10 @@ android {
         res.srcDirs("src/androidMain/resources")
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
-
 
 libres {
     // https://github.com/Skeptick/libres#setup
