@@ -40,6 +40,7 @@ kotlin {
                 api(libs.moko.mvvm.core)
                 api(libs.moko.mvvm.compose)
                 implementation(libs.koin.core)
+                implementation(libs.koin.compose)
             }
         }
 

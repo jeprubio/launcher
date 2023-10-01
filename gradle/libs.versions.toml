@@ -13,6 +13,7 @@ buildConfig = "4.1.1"
 kotlinx-coroutines = "1.7.3"
 moko-mvvm = "0.16.1"
 koin = "3.5.0"
+koin-compose = "1.0.4"
 napier = "2.6.1"
 
 [libraries]
@@ -28,6 +29,7 @@ kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutine
 moko-mvvm-core = { module = "dev.icerock.moko:mvvm-core", version.ref = "moko-mvvm" }
 moko-mvvm-compose = { module = "dev.icerock.moko:mvvm-compose", version.ref = "moko-mvvm" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin-compose"}
 napier = { module = "io.github.aakira:napier", version.ref = "napier" }
 
 [plugins]
